@@ -13,8 +13,8 @@ type Classifier struct {
 	distance pairwise.DistanceType
 }
 
-func NewClassifier() *Classifier {
-	return &Classifier{}
+func NewClassifier(distance pairwise.DistanceType) *Classifier {
+	return &Classifier{distance: distance}
 }
 
 // Fit prepare and train dataset

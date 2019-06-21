@@ -8,9 +8,6 @@ import (
 // Vector of float values
 type Vector []float64
 
-// Vectors list
-type Vectors []Vector
-
 // NewVector with specific size
 func NewVector(size int) Vector {
 	return make(Vector, size)
