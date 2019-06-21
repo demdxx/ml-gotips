@@ -2,15 +2,17 @@ package pairwise
 
 import (
 	"testing"
+
+	"github.com/demdxx/ml-gotips/types"
 )
 
 func Test_ManhattanDistance(t *testing.T) {
 	var tests = []struct {
-		vectors [][]float64
+		vectors types.Vectors
 		result  float64
 	}{
 		{
-			vectors: [][]float64{
+			vectors: types.Vectors{
 				{1, 2, 3},
 				{2, 4, 5},
 			},
